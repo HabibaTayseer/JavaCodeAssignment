@@ -1,0 +1,22 @@
+//alshan a override al abstract method click generate then immplement
+
+package Session7;
+
+public class Rectangle extends Shape {
+    private double length ;
+    private double width ;
+
+    public Rectangle(){
+
+    }
+
+    public Rectangle(double length,double width) {
+        this.length = length;
+        this.width=width ;
+    }
+
+    @Override
+    public double calculateArea() {
+        return length*width;
+    }
+}
